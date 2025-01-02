@@ -1,0 +1,38 @@
+1. 
+    this.$refs.audio.autoplay= true
+    this.$refs.audio.paused
+
+    audio 标签 有这些属性吗？  好奇
+
+2. 跑马灯 简易框架
+ /vue-marquee 
+
+3. console.log([元素对象]) 是否相当于 console.dir
+
+4. css  私有前缀  -ms  -webkit-
+
+5. 查询歌词
+  http://localhost:3000/lyric?id=33255251  get method 
+
+id 取接口 http://localhost:5173/music//playlist/track/all?id=2411629173&limit=20&offset=0
+中的字段 [0].id
+
+6. 关于 audio 的 一些 方法和属性 介绍
+
+https://www.zhangxinxu.com/wordpress/2019/07/html-audio-api-guide/
+
+7.  关于此工程的 视频教学网址
+   https://www.bilibili.com/video/BV1c44y1g7ac/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click&vd_source=181248428a29e8cfe5998fb5a3a425d9
+
+8. 歌词切换的逻辑和  歌词随时间变动的逻辑
+    整两套 DOM,  用v-show 进行切换
+    用监听器 监听 当前的歌词的实时时间， 
+    绑定 html class 对象， 进行 当前行歌词的高亮显示
+    注意 scrollTop offsetTop clientHeight 属性的 使用和含义， 用这些属性来 来 实现 歌词滚动功能
+    innerWidth innerHeight 
+
+
+    通过时间区间判断在歌词中， 通过 类与样式绑定， 显示改歌词
+
+
+9. offsetTop 属性必须 在 position 不为 static 下生效
