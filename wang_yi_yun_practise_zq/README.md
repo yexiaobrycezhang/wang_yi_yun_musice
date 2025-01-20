@@ -33,3 +33,9 @@ npm run build
 ```sh
 npm run lint
 ```
+
+对于服务端项目 NeteaseCloudMusicApi-master ，
+npm install如果 报错 如下图 把 package-lock.json 相关的模板给注释掉 在，
+在 npm install 就可以解决
+
+![alt text](7f8d0c33b76a2f5bd375fc28e696e82.png)
